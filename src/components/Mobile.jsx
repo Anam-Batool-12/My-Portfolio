@@ -39,7 +39,7 @@ const Mobile = () => {
   return (
     <div
       ref={skillsRef}
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white lg:hidden"
+      className="flex flex-col items-center justify-center min-h-screen  text-white lg:hidden"
     >
       <h1 className="text-4xl font-bold mb-8">My Skills</h1>
       <div className="grid grid-cols-4 gap-4 mb-4">
