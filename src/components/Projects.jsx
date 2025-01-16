@@ -44,7 +44,7 @@ const Projects = () => {
       end: `+=${images.length * imgGallery.offsetHeight}`,
       pin: true,
       scrub: 1,
-      markers: false, 
+      markers: false,
     });
 
     return () => {

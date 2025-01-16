@@ -1,17 +1,16 @@
-
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faMessage } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faMessage } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
-  const leftTextRef = useRef(null); 
-  const iconsRef = useRef([]); 
-  const containerRef = useRef(null); 
+  const leftTextRef = useRef(null);
+  const iconsRef = useRef([]);
+  const containerRef = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       leftTextRef.current.children,
@@ -24,11 +23,11 @@ const Contact = () => {
         y: 0,
         stagger: 0.2,
         duration: 1,
-        ease: 'power3.out',
+        ease: "power3.out",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: 'top 55%', 
-          toggleActions: 'play none none reverse', 
+          start: "top 55%",
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -43,11 +42,11 @@ const Contact = () => {
         scale: 1,
         stagger: 0.3,
         duration: 1,
-        ease: 'back.out(1.7)',
+        ease: "back.out(1.7)",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: 'top 85%', 
-          toggleActions: 'play none none reverse',
+          start: "top 85%",
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -59,7 +58,6 @@ const Contact = () => {
       className="w-full h-screen bg-black flex items-center justify-center p-11"
     >
       <div className="flex flex-col sm:flex-row w-[80%] sm:w-[90%] h-[70%] sm:h-[60%] justify-between items-center gap-12">
-        {/* Left Section */}
         <div className="left-c text-center sm:text-left">
           <h1
             className="text-white uppercase text-[3rem] sm:text-[5rem] leading-tight relative"
@@ -70,8 +68,6 @@ const Contact = () => {
             <span className="block -translate-x-[20px]">Touch</span>
           </h1>
         </div>
-
-        {/* Right Section */}
         <div className="right-c flex flex-col justify-evenly items-center bg-transparent shadow-xl w-[260px] sm:w-[300px] h-[350px] sm:h-[400px]">
           <h2 className="text-white text-xl sm:text-2xl font-semibold">
             Connect With Me

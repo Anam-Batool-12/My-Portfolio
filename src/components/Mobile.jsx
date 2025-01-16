@@ -19,18 +19,18 @@ const Mobile = () => {
     const icons = skillsRef.current.querySelectorAll(".skill-icon");
     gsap.fromTo(
       icons,
-      { opacity: 0, scale: 0 }, 
+      { opacity: 0, scale: 0 },
       {
         opacity: 1,
         scale: 1,
         duration: 1,
-        ease: "back.out(1.7)", 
-        stagger: 0.2, 
+        ease: "back.out(1.7)",
+        stagger: 0.2,
         scrollTrigger: {
           trigger: skillsRef.current,
-          start: "top 90%", 
+          start: "top 90%",
           end: "bottom 10%",
-          toggleActions: "play none none reverse", 
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -45,7 +45,11 @@ const Mobile = () => {
       <div className="grid grid-cols-4 gap-4 mb-4">
         <img src={html} alt="HTML" className="w-16 h-16 mx-auto skill-icon" />
         <img src={css} alt="CSS" className="w-16 h-16 mx-auto skill-icon" />
-        <img src={js} alt="JavaScript" className="w-16 h-16 mx-auto skill-icon" />
+        <img
+          src={js}
+          alt="JavaScript"
+          className="w-16 h-16 mx-auto skill-icon"
+        />
         <img src={react} alt="React" className="w-16 h-16 mx-auto skill-icon" />
       </div>
       <div className="grid grid-cols-3 gap-4 mb-4">
