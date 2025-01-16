@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="btn hidden sm:block">
            <a href="https://www.linkedin.com/in/anam-batool-6a7018345"> <button>Connect</button></a>
         </div>
-        <div className="menu">
+        <div className="menu pr-12">
         <FontAwesomeIcon  icon={faBars}/>
         </div>
       </nav>
@@ -22,3 +22,10 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+

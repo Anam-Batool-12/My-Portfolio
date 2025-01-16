@@ -5,6 +5,7 @@ import Hero from "./components/Hero.jsx";
 import Main from "./components/Main.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
+import Moblieskill from "./components/Moblieskill.jsx"
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
@@ -17,6 +18,7 @@ function App() {
       <Main />
       <About />
       <Skills />
+      <Moblieskill />
       <Projects />
       <Contact />
       <Footer />
