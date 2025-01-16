@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  body{
+   background-color: black;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  .navbar {
+    @apply flex items-center justify-between lg:px-32 sm:px-16  text-white ;
+  }
+  .btn {
+    @apply px-4 py-2 font-semibold text-white bg-green-800 hover:bg-green-500 rounded-lg transition duration-300 ease-in-out;
+  }
+  /* styles for Text.jsx */
+  .left-container-side{
+    @apply text-white uppercase absolute z-20 text-center px-4 sm:px-0
+  }
+  .right-container-side{
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-60 -z-10 sm:left-[30%] sm:top-[30%] sm:translate-y-[-50%]
+  }
+  .mar{
+    @apply transform translate-x-[-100%] flex-shrink-0 flex items-center space-x-16 
+  }
+  /* styles for About.jsx */
+  .box-section{
+    @apply w-[90%] sm:w-[600px] h-[400px] bg-zinc-900 mx-auto mt-[3rem] rounded-lg shadow-2xl relative overflow-hidden
+  }
+  .outline{
+    @apply absolute inset-0 border-[5px] border-green-800 rounded-lg
+  }
+  .top-circle{
+    @apply absolute top-[-50px] left-[-50px] w-[150px] h-[150px] bg-green-800 opacity-30 rounded-full animate-pulse
+  }
+  .bottom-circle{
+    @apply absolute bottom-[-70px] right-[-70px] w-[200px] h-[200px] bg-green-800 opacity-20 rounded-full animate-pulse
+  }
+  .text-area{
+    @apply text-center text-white absolute inset-0 flex flex-col justify-center items-center
+  }
+  .about-h1{
+    @apply text-white text-[6rem] font-extrabold uppercase text-center py-[6rem]
+  }
+  .about-h2{
+    @apply text-[2rem] font-bold uppercase
+  }
+  .about-p{
+    @apply text-[1rem] mt-4 px-8
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+    
